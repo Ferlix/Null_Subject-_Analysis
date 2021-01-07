@@ -6,7 +6,6 @@ Project that aims to study the performance of the state-of-the-art translation m
 * Python 3.6 (or higher)
 * PyTorch 1.2 (or higher)
 * For training models, you will need an NVIDIA GPU
-* Install NVIDIA’s apex library for faster training 
 
 ## Install Fairseq
 
@@ -19,6 +18,7 @@ pip install --editable ./
 ```
 
 ## Install NVIDIA's apex library
+Install NVIDIA’s apex library for faster training. It requires CUDA and CUDA toolkit installed
 ```
 git clone https://github.com/NVIDIA/apex
 cd apex
