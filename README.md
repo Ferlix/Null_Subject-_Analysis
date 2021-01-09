@@ -40,7 +40,7 @@ The data_preparation.sh scripts performs the following steps on the corpus:
 * download of the BPE scripts; learning and applying BPE on the corpus
 
 ```
-./data_preparation.sh setimes.en-mk.mk.txt setimes.en-mk.en.txt
+./data_preparation.sh ./corpora/it-en/europarl-v7.it-en.it ./corpora/it-en/europarl-v7.it-en.en
 ```
 
 After that the corpus is split into training, development and test set:
@@ -52,7 +52,7 @@ After that the corpus is split into training, development and test set:
 After that the fairseq tool can be invoked to preprocess the corpus:
 
 ```
-fairseq preprocess -sourcelang mk -targetlang en -trainpref train/train \
+fairseq preprocess -sourcelang it -targetlang en -trainpref train/train \
                    -validpref dev/dev -testpref test/test -thresholdsrc 3 \
                    -thresholdtgt 3 -destdir model-data
 ```
