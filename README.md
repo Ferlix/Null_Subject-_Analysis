@@ -52,9 +52,9 @@ After that the corpus is split into training, development and test set:
 After that the fairseq tool can be invoked to preprocess the corpus:
 
 ```
-fairseq preprocess -sourcelang it -targetlang en -trainpref train/train \
-                   -validpref dev/dev -testpref test/test -thresholdsrc 3 \
-                   -thresholdtgt 3 -destdir model-data
+fairseq preprocess --source-lang it --target-lang en --trainpref train/train \
+                   --validpref dev/dev --testpref test/test --thresholdsrc 3 \
+                   --thresholdtgt 3 --destdir model-data
 ```
 
 # Training
